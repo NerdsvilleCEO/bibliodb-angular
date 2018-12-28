@@ -1,0 +1,33 @@
+<h2>Create Book</h2>
+
+<form name="bookInfo" [formGroup]="createForm" (ngSubmit)="createBook()">
+  <div class="form-group">
+    <label for="book">Title</label>
+    <input formControlName="name" class="form-control" type="text" id="book" placeholder="Moby Dick" />
+    <div class="invalid-feedback">
+      Please provide a valid city.
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <label for="isbn">ISBN</label>
+    <input formControlName="isbn" class="form-control" type="text" id="isbn" placeholder="#####" />
+    <div class="invalid-feedback">
+      Please provide a valid city.
+    </div>
+  </div>
+  
+  <!--<div formArrayName="authors" class="form-group">
+
+    <button type="button" class="btn btn-primary btn-sm" (click)="addAuthor()">Add Author</button>
+    <div *ngFor="let author of authors.controls; let i=index">
+      <label for="author{{i}}">Author</label>
+      <input class="form-control" type="text" id="{{i}}" [formControlName]="i" placeholder="Herman Melville" />
+      <div class="invalid-feedback">
+        Please provide a valid city.
+      </div>
+    </div>
+  </div> -->
+  
+  <button class="btn btn-primary btn-block">Create</button>
+</form>

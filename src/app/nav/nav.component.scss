@@ -1,0 +1,34 @@
+// $bgColor: #333;
+// $primary: #fff;
+    
+// .container {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+// }
+
+// nav {
+//     background: $bgColor;
+//     color: $primary;
+//     padding: 0 1rem;
+
+//     ul {
+//         li {
+//             list-style: none;
+//             display: inline-block;
+
+//             &:not(:last-child) {
+//                 margin-right: 0.75rem;
+//             }
+//         }
+//     }
+
+//     a {
+//         color: $primary;
+//         text-decoration: none;
+//     }
+
+//     a:hover, a:active, a:focus, a:visited {
+//         color: darken($primary, 10%);
+//     }
+// }

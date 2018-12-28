@@ -1,0 +1,22 @@
+<h2>Book List</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">ISBN</th>
+      <th scope="col">Author</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let book of books$">
+      <td>{{book.Name}}</td>
+      <td>{{book.ISBN}}</td>
+      <td>
+        <tr *ngFor="let author of book.Authors">{{author.FullName}}</tr>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<pre>{{ books$ | json }}</pre>
+
